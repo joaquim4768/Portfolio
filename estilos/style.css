@@ -46,6 +46,14 @@ main{
   margin-top: 20px;
 }
 
+article{
+  background-color: var(--fundo-card);
+  color: var(--texto);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -122,18 +130,6 @@ div#social a:hover{
   color: var(--destaque-inverso);
 }
 
-article#skills{
-  background-color: var(--fundo-card);
-  color: var(--texto);
-  padding: 20px;
-  border-radius: 8px;
-}
-
-article h2{
-  color: var(--destaque);
-  margin-bottom: 20px;
-}
-
 #skill-container{
   display: grid;
   grid-template-columns: 1fr;
@@ -167,4 +163,40 @@ article h2{
 #skill-container .porcent{
   color: var(--destaque);
   font-weight: bold;
+}
+
+article h2{
+  color: var(--destaque);
+  margin-bottom: 20px;
+}
+
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-color .8s, border-width .5s;
+}
+
+#formacao-container .curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao{
+  font-weight: 1.1em;
+  color: var(--destaque-inverso);
 }
