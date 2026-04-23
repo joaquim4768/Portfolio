@@ -54,6 +54,13 @@ article{
   margin-bottom: 20px;
 }
 
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -173,19 +180,19 @@ article h2{
 #formacao-container{
   display: flex;
   flex-direction: column-reverse;
-  gap: 20px;
+  gap: 25px;
 }
 
 #formacao-container .curso{
   background-color: var(--fundo-principal);
   border-radius: 8px;
-  border-left: 5px solid var(--destaque-inverso);
+  border-left: 7px solid var(--destaque-inverso);
   padding-left: 15px;
-  transition: border-color .8s, border-width .5s;
+  transition: border-color .8s, transform .5s;
 }
 
 #formacao-container .curso:hover{
-  border-left-width: 15px;
+  transform: translateX(12px);
   border-color: var(--destaque);
   cursor: pointer;
 }
@@ -199,4 +206,35 @@ article h2{
 #formacao-container .instituicao{
   font-weight: 1.1em;
   color: var(--destaque-inverso);
+}
+
+#projeto-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#projeto-container .projeto{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 7px solid var(--destaque-inverso);
+  transition: border-color .5s, transform .5s;
+}
+
+#projeto-container .projeto:hover{
+  border-color: var(--destaque);
+  transform: translateX(12px);
+  cursor: pointer;
+}
+
+#projeto-container .foto{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
 }
