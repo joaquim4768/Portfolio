@@ -37,6 +37,9 @@ header{
   justify-content: flex-end;
   align-content: center;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 main{
@@ -84,14 +87,14 @@ nav#menu a:hover{
   color: var(--destaque);
 }
 
-section.ficha{
+section#ficha{
   grid-column: 2/3;
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
 }
 
-section.ficha img{
+section#ficha img{
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -103,14 +106,14 @@ section.ficha img{
   margin: auto;
 }
 
-section.ficha h1{
+section#ficha h1{
   color: var(--destaque);
   margin: 15px 0px;
   font-size: 1.8em;
   text-align: left;
 }
 
-section.ficha p{
+section#ficha p{
   text-align: justify;
 }
 
@@ -237,4 +240,43 @@ article h2{
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
+}
+
+#projeto-container .code{
+  text-decoration: none;
+  color: var(--texto);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: color .8s, background-color .8s, letter-spacing .8s;
+}
+
+#projeto-container .code:hover{
+  color: var(--texto-inverso);
+  letter-spacing: .5px;
+  background-color: var(--destaque);
+}
+
+#contato-container span.label{
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#contato-container h2{
+  margin-bottom: 10px;
+}
+#contato-container .info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  padding: 15px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-color .5s;
+}
+
+#contato-container .info:hover{
+  border-color: var(--destaque);
 }

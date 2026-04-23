@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     <script src="https://kit.fontawesome.com/530b12dc70.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-file-code"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#ficha" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-file-code"></i></a></li>
+                <li><a href="#contato" class="link"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="ficha">
+        <section id="ficha">
             <img src="imagens/joaquim foto.jpg" alt="Joaquim Foto">
             <h1>Joaquim Andrade</h1>
             <p>Sou um Desenvolvedor Web focado em criar interfaces modernas, responsivas e bem estruturadas. Tenho experiência com HTML e CSS e atualmente estou aprofundando meus estudos em JavaScript, desenvolvendo projetos pessoais para evoluir minhas habilidades. Gosto de aprender na prática, resolver problemas e melhorar a experiência do usuário em cada detalhe.</p>
@@ -166,7 +168,7 @@
                             <p class="periodo">2026</p>
                             <h3>Projeto Android</h3>
                             <p>Projeto construído para treinar a divisão semântica html e css básico.</p>
-                            <a href="">Ver Código <i class="fa-solid fa-hand-point-right"></i></a>
+                            <a href="" class="code">Ver Código <i class="fa-solid fa-hand-point-right"></i></a>
                         </div>
                     </div>
 
@@ -176,7 +178,7 @@
                             <p class="periodo">2026</p>
                             <h3>Projeto Links</h3>
                             <p>Projeto construído para treinar a inserção de iframes</p>
-                            <a href="">Ver Código <i class="fa-solid fa-hand-point-right"></i></a>
+                            <a href="" class="code">Ver Código <i class="fa-solid fa-hand-point-right"></i></a>
                         </div>
                     </div>
 
@@ -186,12 +188,21 @@
                             <p class="periodo">2026</p>
                             <h3>Projeto Login</h3>
                             <p>Projeto de Página de Login Fake com intuito de treinar design e responsividade.</p>
-                            <a href="">Ver Código <i class="fa-solid fa-hand-point-right"></i></a>
+                            <a href="" class="code">Ver Código <i class="fa-solid fa-hand-point-right"></i></a>
                         </div>
                     </div>
                 </div>
             </article>
 
+            <article id="contato">
+                <div id="contato-container">
+                    <h2><i class="fa-solid fa-envelope"></i> Contato</h2>
+                    <div class="info">
+                        <p><span class="label">E-mail:</span> joaquim.ladm@gmail.com</p>
+                        <p><span class="label">Whatsapp:</span> (81) 99258-1142</p>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
