@@ -252,21 +252,6 @@ article h2{
   border-radius: 8px;
 }
 
-#projeto-container .code{
-  text-decoration: none;
-  color: var(--texto);
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  transition: color .8s, background-color .8s, letter-spacing .8s;
-}
-
-#projeto-container .code:hover{
-  color: var(--texto-inverso);
-  letter-spacing: .5px;
-  background-color: var(--destaque);
-}
 
 #contato-container span.label{
   font-weight: bold;
