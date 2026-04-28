@@ -290,3 +290,20 @@ article h2{
 #contato-container .info:hover{
   border-color: var(--destaque);
 }
+
+@media screen and (min-width: 768px){
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha{
+    grid-column: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 64px;
+  }
+
+  section.detalhes{
+    grid-column: 3/4;
+  }
+}
